@@ -8,6 +8,7 @@
     ],
     "precio": "70",
     "agotado": false,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/bassati/Woolly_Mammoth_Cover.png",
       "img/pedales/bassati/Woolly_Mammoth_Back_ES.png",
@@ -17,19 +18,18 @@
       "71XmR1qRJrk",
       "Zd9vq9RKZl8"
     ],
-    "descripcionCorta": "Graves sísmicos (Basado en Woolly Mammoth).",
-    "descripcionLarga": "<p>Fuzz masivo diseñado para respetar las frecuencias sub-graves. Famoso por su sonido \"velcro\" y su capacidad para detener el sonido en seco (gating). Brutal con el bajo, como con la guitarra.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Wool:</strong> Cantidad de \"pelo\" y saturación.</li>\n  <li><strong>Pinch:</strong> Puerta de ruido (Gate). Apriétalo para sonidos entrecortados tipo sintetizador.</li>\n  <li><strong>EQ:</strong> Balance tonal.</li>\n  <li><strong>Volume/Output:</strong> Nivel de salida general.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>",
-    "proximamente": false
+    "descripcionCorta": "Graves sísmicos (Basado en el Fuzz Woolly Mammoth).",
+    "descripcionLarga": "<p>Fuzz masivo diseñado para respetar las frecuencias sub-graves. Famoso por su sonido \"velcro\" y su capacidad para detener el sonido en seco (gating). Brutal con el bajo, como con la guitarra.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Wool:</strong> Cantidad de \"pelo\" y saturación.</li>\n  <li><strong>Pinch:</strong> Puerta de ruido (Gate). Apriétalo para sonidos entrecortados tipo sintetizador.</li>\n  <li><strong>EQ:</strong> Balance tonal.</li>\n  <li><strong>Volume/Output:</strong> Nivel de salida general.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>"
   },
   {
     "id": "the-double-trouble-njd-dub-siren--delay-",
     "nombre": "The Double Trouble: NJD Dub Siren & Delay ",
     "categoria": [
-      "dub",
-      "synth"
+      "dub"
     ],
     "precio": "145",
     "agotado": false,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/dub-siren/Zaunk_Add_Siren_Cover.png",
       "img/pedales/dub-siren/Zaunk_Add_siren_EN.png",
@@ -39,8 +39,7 @@
       "hhkBgY2TfvI"
     ],
     "descripcionCorta": "La herramienta definitiva para el Sound System.",
-    "descripcionLarga": "<p>No es solo una sirena Dub clásica tipo NJD, es una estación de ruido. Incluye una sección dedicada de Echo/Delay y mods para generar texturas bizarras y oscilaciones. Dub, Reggae y caos sonoro.</p>\n\n<p><strong>SECCIÓN DUB SIREN:</strong></p>\n<ul>\n  <li><strong>Trigger:</strong> Interruptor de activación (momentáneo o fijo).</li>\n  <li><strong>Tone & Mode:</strong> 4 tonos y 4 formas de onda seleccionables.</li>\n  <li><strong>Rate:</strong> Velocidad del LFO (incluye modo manual).</li>\n</ul>\n\n<p><strong>SECCIÓN ECHO/DELAY:</strong></p>\n<ul>\n  <li><strong>Mix & Echo:</strong> Mezcla y tiempo del delay.</li>\n  <li><strong>Feedback & Warp:</strong> Genera auto-oscilación y deformación de la señal.</li>\n  <li><strong>Blast:</strong> Filtro de frecuencias momentáneo para efectos locos.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo). Salida: RCA.</small></p>",
-    "proximamente": false
+    "descripcionLarga": "<p>No es solo una sirena Dub clásica tipo NJD, es una estación de ruido. Incluye una sección dedicada de Echo/Delay y mods para generar texturas bizarras y oscilaciones. Dub, Reggae y caos sonoro.</p>\n\n<p><strong>SECCIÓN DUB SIREN:</strong></p>\n<ul>\n  <li><strong>Trigger:</strong> Interruptor de activación (momentáneo o fijo).</li>\n  <li><strong>Tone & Mode:</strong> 4 tonos y 4 formas de onda seleccionables.</li>\n  <li><strong>Rate:</strong> Velocidad del LFO (incluye modo manual).</li>\n</ul>\n\n<p><strong>SECCIÓN ECHO/DELAY:</strong></p>\n<ul>\n  <li><strong>Mix & Echo:</strong> Mezcla y tiempo del delay.</li>\n  <li><strong>Feedback & Warp:</strong> Genera auto-oscilación y deformación de la señal.</li>\n  <li><strong>Blast:</strong> Filtro de frecuencias momentáneo para efectos locos.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo). Salida: RCA.</small></p>"
   },
   {
     "id": "the-red-artifact",
@@ -72,6 +71,7 @@
     ],
     "precio": "40",
     "agotado": false,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/bass-fuzz/Bazz_Fuss_Cover.png",
       "img/pedales/bass-fuzz/Bazz_Fuss_Back_ES.png",
@@ -81,9 +81,8 @@
       "K2qXHRQpLGM",
       "6gr7a9EV2TU"
     ],
-    "descripcionCorta": "El clásico minimalista.",
-    "descripcionLarga": "<p>El fuzz legendario de la comunidad DIY. Diseño minimalista de una sola perilla que ofrece un tono masivo sin complicaciones. Ideal para bajo y guitarra.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Volume:</strong> Gestiona la salida y la intensidad del fuzz.</li>\n</ul>\n\n<p><strong>DESTACADO:</strong></p>\n<ul>\n  <li><strong>Crudo y Grueso:</strong> Sonido agresivo con componentes mínimos.</li>\n  </ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>",
-    "proximamente": false
+    "descripcionCorta": "Fuzz minimalista proveniente de lo más profundo del DIY.",
+    "descripcionLarga": "<p>El fuzz legendario de la comunidad DIY. Diseño minimalista de una sola perilla que ofrece un tono masivo sin complicaciones. Ideal para bajo y guitarra.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Volume:</strong> Gestiona la salida y la intensidad del fuzz.</li>\n</ul>\n\n<p><strong>DESTACADO:</strong></p>\n<ul>\n  <li><strong>Crudo y Grueso:</strong> Sonido agresivo con componentes mínimos.</li>\n  </ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>"
   },
   {
     "id": "fantastic-reverbito",
@@ -112,8 +111,8 @@
       "Tremolo"
     ],
     "precio": "70",
-    "agotado": true,
-    "proximamente": false,
+    "agotado": false,
+    "proximamente": true,
     "imagenes": [
       "img/pedales/spaghetti-surfer/Tremolo_Cover.png",
       "img/pedales/spaghetti-surfer/Tremolo_Back_ES.png",
@@ -133,15 +132,15 @@
     ],
     "precio": "60",
     "agotado": false,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/desert-storm/desert-storm.jpeg"
     ],
     "videoIDs": [
       "KZLo3L1SWa0"
     ],
-    "descripcionCorta": "Volumen y Gloria (Basado en Acapulco Gold).",
-    "descripcionLarga": "<p>El rugido de un amplificador Sunn Model T a todo volumen en una caja pequeña. Un fuzz de potencia pura, dinámico y sensible a tu forma de tocar. Sin tonterías.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Volume:</strong> Un solo botón. Gíralo y destruye.</li>\n</ul>\n\n<p><strong>FILOSOFÍA:</strong></p>\n<p>Baja el volumen de tu guitarra para limpiar la señal, súbelo para desatar la tormenta. Stoner y Doom instantáneo.</p>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>",
-    "proximamente": false
+    "descripcionCorta": "Puro ruido Stoner (Basado en Acapulco Gold).",
+    "descripcionLarga": "<p>El rugido de un amplificador Sunn Model T a todo volumen en una caja pequeña. Un fuzz de potencia pura, dinámico y sensible a tu forma de tocar. Sin tonterías.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Volume:</strong> Un solo botón. Gíralo y destruye.</li>\n</ul>\n\n<p><strong>FILOSOFÍA:</strong></p>\n<p>Baja el volumen de tu guitarra para limpiar la señal, súbelo para desatar la tormenta. Stoner y Doom instantáneo.</p>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>"
   },
   {
     "id": "zascam",
@@ -167,15 +166,15 @@
     ],
     "precio": "85",
     "agotado": false,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/fantasmico/Fantasmico.jpeg"
     ],
     "videoIDs": [
       "ItkHtsXT_y8"
     ],
-    "descripcionCorta": "El estándar moderno (Basado en B3K v2).",
-    "descripcionLarga": "<p>Overdrive percusivo y definido para bajo. Diseñado para añadir garra y suciedad sin perder ni un ápice de tus graves limpios gracias a su mezcla interna.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Drive & Blend:</strong> Cantidad de distorsión y mezcla con tu señal limpia.</li>\n  <li><strong>Tone:</strong> Brillo y ataque.</li>\n  <li><strong>Switches (Grunt/Attack):</strong> Refuerzo de graves y definición de agudos seleccionable.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>",
-    "proximamente": false
+    "descripcionCorta": "El estándar moderno (Basado en el Overdrive B3K v2).",
+    "descripcionLarga": "<p>Overdrive percusivo y definido para bajo. Diseñado para añadir garra y suciedad sin perder ni un ápice de tus graves limpios gracias a su mezcla interna.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Drive & Blend:</strong> Cantidad de distorsión y mezcla con tu señal limpia.</li>\n  <li><strong>Tone:</strong> Brillo y ataque.</li>\n  <li><strong>Switches (Grunt/Attack):</strong> Refuerzo de graves y definición de agudos seleccionable.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>"
   },
   {
     "id": "optic-compressor",
@@ -186,14 +185,14 @@
     ],
     "precio": "40",
     "agotado": false,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/optic-compressor/optic_comp.jpeg"
     ],
     "videoIDs": [
       "Bht3HMJ8YSE"
     ],
-    "descripcionCorta": "La mano invisible.",
-    "descripcionLarga": "<p>Basado en uno de los circuitos más populares del mundo DIY (Really Cheap Compressor). Este compresor óptico es simple y efectivo, una herramienta esencial tanto para guitarra como para bajo.</p>\n\n<p>Su diseño utiliza una fotorresistencia para aportar sustain y un control dinámico suave. Mantiene un tono natural y transparente, nivelando tu señal con solo dos perillas sin alterar el carácter de tu instrumento.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Comp:</strong> Ajusta la intensidad de la compresión y el sustain.</li>\n  <li><strong>Volume:</strong> Controla el nivel de salida general.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>",
-    "proximamente": false
+    "descripcionCorta": "Compresor sencillo y efectivo. Siempre lo dejarás encendido.",
+    "descripcionLarga": "<p>Basado en uno de los circuitos más populares del mundo DIY (Really Cheap Compressor). Este compresor óptico es simple y efectivo, una herramienta esencial tanto para guitarra como para bajo.</p>\n\n<p>Su diseño utiliza una fotorresistencia para aportar sustain y un control dinámico suave. Mantiene un tono natural y transparente, nivelando tu señal con solo dos perillas sin alterar el carácter de tu instrumento.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Comp:</strong> Ajusta la intensidad de la compresión y el sustain.</li>\n  <li><strong>Volume:</strong> Controla el nivel de salida general.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>"
   }
 ]

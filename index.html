@@ -6,7 +6,14 @@
    
   <meta name="description" content="Custom Guitar, Bass and Synth Effects.">
   <meta property="og:title" content="Zaunk Pedals! | DIY Effects">
-  <meta property="og:image" content="img/Zaunk_Logo.png">
+  
+  <meta property="og:image" content="https://zaunkpedals.github.io/img/Zaunk_Logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta property="og:url" content="https://zaunkpedals.github.io/">
+  <meta property="og:type" content="website">
+  
   <link rel="icon" type="image/png" href="img/Zaunk_Logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -516,7 +523,7 @@
 
   </style>
 </head>
-<body style="">
+<body style="" class="">
 
 <div id="intro-layer" style="opacity: 1; display: flex;">
   <img id="intro-logo-img" src="img/Zaunk_Logo.png" class="intro-logo">
@@ -527,8 +534,8 @@
 
 <div id="scroll-up" onclick="goHome()" style="display: none;">↑</div>
 
-<div id="fab" onclick="openCheckout()" style="display:none;">
-  <span id="fab-count">0</span> -&gt; REVISAR PEDIDO
+<div id="fab" onclick="openCheckout()" style="display: none;">
+  <span id="fab-count">1</span> -&gt; REVISAR PEDIDO
 </div>
 
 <header>
@@ -628,34 +635,34 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
       <div id="carousel-dots" class="carousel-dots"><div class="dot active"></div><div class="dot"></div></div>
     </div>
     <div id="modal-info">
-      <h2 id="m-title" style="font-size:2rem; margin-bottom:0.5rem;">Desert Storm</h2>
+      <h2 id="m-title" style="font-size:2rem; margin-bottom:0.5rem;">Optic Compressor</h2>
        
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:1rem; flex-wrap:wrap;">
-          <div id="m-cats"><span style="background:var(--main-color); color:#fff; padding:2px 6px; margin-right:5px; font-size:0.8rem;">FUZZ</span></div>
+          <div id="m-cats"><span style="background:var(--main-color); color:#fff; padding:2px 6px; margin-right:5px; font-size:0.8rem;">COMPRESSOR</span><span style="background:var(--main-color); color:#fff; padding:2px 6px; margin-right:5px; font-size:0.8rem;">BASS</span></div>
            
-          <button id="m-btn-interest-small" class="btn" style="padding: 2px 8px; font-size: 0.8rem; background: rgb(238, 238, 238); color: var(--ink); border: 1px solid rgb(153, 153, 153); display: inline-block;" onclick="closeModal(); openClientGate();">
+          <button id="m-btn-interest-small" class="btn" style="padding: 2px 8px; font-size: 0.8rem; background: rgb(238, 238, 238); color: var(--ink); border: 1px solid rgb(153, 153, 153); display: none;" onclick="closeModal(); openClientGate();">
               ¿TE INTERESA?
           </button>
       </div>
 
       <div style="margin-bottom: 1rem; display:flex; align-items:center;">
-        <h3 id="m-price" style="background:var(--main-color); color:#fff; display:none; padding:5px 10px; margin:0;">0 €</h3>
-        <button id="m-btn-side" class="btn" style="padding: 5px 15px; font-size: 0.9rem; margin-left: 15px; display: none; opacity: 1;">LO QUIERO (+1)</button>
+        <h3 id="m-price" style="background: var(--main-color); color: rgb(255, 255, 255); display: inline-block; padding: 5px 10px; margin: 0px;">40 €</h3>
+        <button id="m-btn-side" class="btn" style="padding: 5px 15px; font-size: 0.9rem; margin-left: 15px; display: inline-block; opacity: 1;">LO QUIERO (+1)</button>
       </div>
        
-      <div id="m-desc"><p>El rugido de un amplificador Sunn Model T a todo volumen en una caja pequeña. Un fuzz de potencia pura, dinámico y sensible a tu forma de tocar. Sin tonterías.</p>
+      <div id="m-desc"><p>Basado en uno de los circuitos más populares del mundo DIY (Really Cheap Compressor). Este compresor óptico es simple y efectivo, una herramienta esencial tanto para guitarra como para bajo.</p>
+
+<p>Su diseño utiliza una fotorresistencia para aportar sustain y un control dinámico suave. Mantiene un tono natural y transparente, nivelando tu señal con solo dos perillas sin alterar el carácter de tu instrumento.</p>
 
 <p><strong>CONTROLES:</strong></p>
 <ul>
-  <li><strong>Volume:</strong> Un solo botón. Gíralo y destruye.</li>
+  <li><strong>Comp:</strong> Ajusta la intensidad de la compresión y el sustain.</li>
+  <li><strong>Volume:</strong> Controla el nivel de salida general.</li>
 </ul>
-
-<p><strong>FILOSOFÍA:</strong></p>
-<p>Baja el volumen de tu guitarra para limpiar la señal, súbelo para desatar la tormenta. Stoner y Doom instantáneo.</p>
 
 <p><small>Alimentación: 9V DC estándar (centro negativo).</small></p></div>
       <br>
-      <button id="m-btn" class="btn" style="width: 100%; opacity: 1;">¡ME INTERESA!</button>
+      <button id="m-btn" class="btn" style="width: 100%; opacity: 1;">LO QUIERO (+1)</button>
     </div>
   </div>
 </div>
@@ -667,15 +674,27 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
       <button class="btn" style="padding:5px 10px;" onclick="closeCheckout()">X CERRAR</button>
     </div>
     
-    <div id="checkout-list"></div>
+    <div id="checkout-list"><div class="checkout-item">
+                <img src="img/pedales/optic-compressor/optic_comp.jpeg" class="checkout-img">
+                <div class="checkout-details">
+                    <h4>Optic Compressor</h4>
+                    <small>40 €/ud</small>
+                </div>
+                <div class="checkout-actions">
+                    <button class="checkout-btn" onclick="updateCheckoutQty('optic-compressor', -1)">-</button>
+                    <span style="width:20px; text-align:center;">1</span>
+                    <button class="checkout-btn" onclick="updateCheckoutQty('optic-compressor', 1)">+</button>
+                    <button class="checkout-btn del-btn" onclick="updateCheckoutQty('optic-compressor', -999)">X</button>
+                </div>
+            </div></div>
     <div id="checkout-summary">
-        Subtotal: <span id="ck-subtotal">0</span> €<br>
+        Subtotal: <span id="ck-subtotal">40</span> €<br>
         <div id="shipping-section">
             <h4 style="margin:10px 0 5px 0;">Tipo de envío:</h4>
-            <div id="shipping-options"></div>
+            <div id="shipping-options"><label><input type="radio" name="ship" value="0" data-name="Recogida en mano" onchange="updateCheckoutTotal()"> Recogida en mano [Gratis]</label><label><input type="radio" name="ship" value="6" data-name="Península" checked="" onchange="updateCheckoutTotal()"> Península [6 €]</label></div>
         </div>
         <hr>
-        <strong style="font-size:1.5rem;">TOTAL: <span id="ck-total">0</span> €</strong>
+        <strong style="font-size:1.5rem;">TOTAL: <span id="ck-total">46</span> €</strong>
     </div>
     <br>
     <button class="btn" style="width:100%; background:var(--ink); color:#fff;" onclick="confirmOrder()">TODO OK, CONFIRMAR PEDIDO</button>
@@ -691,7 +710,7 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
 
       <div style="display:flex; flex-direction:column; gap:10px; margin-top:1rem;">
           <button class="btn" onclick="checkClientAccess()">ENTRAR</button>
-          <a id="access-request-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfcO8TVkngcV9X1HHVkd3Lwd4V_w1ZSZJrlepYngiMaFaq2zw/viewform?usp=pp_url&amp;entry.436883588=PET-260201-610" target="_blank" class="btn" style="background:#eee; color:#000; border-color:#999; text-align:center; text-decoration:none;">PIDE TU ACCESO</a>
+          <a id="access-request-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfcO8TVkngcV9X1HHVkd3Lwd4V_w1ZSZJrlepYngiMaFaq2zw/viewform?usp=pp_url&amp;entry.436883588=PET-260201-713" target="_blank" class="btn" style="background:#eee; color:#000; border-color:#999; text-align:center; text-decoration:none;">PIDE TU ACCESO</a>
           <button class="btn" onclick="closeClientGate()" style="border-color:red; color:red; margin-top:5px;">CANCELAR</button>
       </div>
    </div>
@@ -718,16 +737,16 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
       <div>
         <div class="admin-card" id="pedal-editor-card">
           <h3>EDITOR PEDALES</h3>
-          <input type="hidden" id="e-id">
+          <input type="hidden" id="e-id" value="">
           <label>Nombre:</label> <input id="e-nombre">
           <label>Precio (€):</label> <input type="number" id="e-precio">
           <label>Categorías:</label> <input id="e-cat" list="cat-suggestions">
           <datalist id="cat-suggestions"><option value="Fuzz"></option><option value="Bass"></option><option value="dub"></option><option value="synth"></option><option value="Reverb"></option><option value="Tremolo"></option><option value="preamp"></option><option value="Compressor"></option></datalist>
           <label style="background:#ddd; padding:10px; display:flex; align-items:center; margin:1rem 0;">
-            <input type="checkbox" id="e-agotado"> <span style="margin-left:5px; font-weight:bold;">MARCAR COMO AGOTADO</span>
+            <input type="checkbox" id="e-agotado" value=""> <span style="margin-left:5px; font-weight:bold;">MARCAR COMO AGOTADO</span>
           </label>
           <label style="background:#ffeb3b; padding:10px; display:flex; align-items:center; margin:1rem 0;">
-            <input type="checkbox" id="e-proximamente"> <span style="margin-left:5px; font-weight:bold;">MARCAR COMO "PRÓXIMAMENTE"</span>
+            <input type="checkbox" id="e-proximamente" value=""> <span style="margin-left:5px; font-weight:bold;">MARCAR COMO "PRÓXIMAMENTE"</span>
           </label>
           <label>Imágenes (1 URL/línea):</label> <textarea id="e-imgs" rows="3" placeholder="Arrastra aquí tus fotos desde la carpeta 'img' o pega las rutas..."></textarea>
           <label>Youtube IDs:</label> <textarea id="e-videos" rows="2"></textarea>
@@ -941,21 +960,35 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('txt-email').value = document.getElementById('link-email').href.replace('mailto:', '');
 });
 
-// GESTIÓN HISTORIAL (NAVEGADOR)
+// GESTIÓN HISTORIAL UNIFICADA (NAVEGADOR)
 window.addEventListener('popstate', (event) => {
-    // 1. Si el usuario da "Atrás" y estaba en modal, cerramos modal
-    const modal = document.getElementById('modal');
-    if (modal.style.display === 'flex') {
-        modal.style.display = 'none';
-        document.body.style.overflow = '';
-        return;
-    }
+    // 1. CERRAR TODOS LOS MODALES POSIBLES
+    const modals = ['modal', 'checkout-modal', 'client-gate-modal', 'login-modal', 'admin', 'lightbox'];
+    let closedAny = false;
     
+    modals.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && (el.style.display === 'flex' || el.style.display === 'block')) {
+            el.style.display = 'none';
+            closedAny = true;
+        }
+    });
+
+    if (closedAny) {
+        document.body.style.overflow = ''; // Restaurar Scroll
+        document.getElementById('carousel-track').innerHTML = ""; 
+    }
+
     // 2. Si estaba en FAQ o About Us, volvemos a la home
-    // (Comprobamos si hay alguna pagina de info visible)
     const visibleInfo = document.querySelector('.info-page[style*="display: block"]');
     if (visibleInfo) {
-        goHome(true); // true = called from history (no push state)
+        goHome(true); 
+    }
+    
+    // 3. NUEVO: SI NO HAY ESTADO "VIP", SALIR DE LA TRASTIENDA
+    // (Esto ocurre cuando el usuario da atrás desde la trastienda)
+    if (isVip && (!event.state || event.state.mode !== 'vip')) {
+        disableVipMode();
     }
 });
 
@@ -965,25 +998,31 @@ function openClientGate() {
     const input = document.getElementById('client-pass');
     input.value = '';
     
-    // === GENERACIÓN ID (FORMATO UNIFICADO: PET-AAMMDD-XXX) ===
+    // Generar ID
     const now = new Date();
-    const dateStr = now.toISOString().slice(2,10).replace(/-/g, ""); // AAMMDD
-    const randomStr = Math.floor(Math.random() * 1000).toString().padStart(3, '0'); // 3 dígitos (000-999)
-    
+    const dateStr = now.toISOString().slice(2,10).replace(/-/g, ""); 
+    const randomStr = Math.floor(Math.random() * 1000).toString().padStart(3, '0'); 
     const accessId = `PET-${dateStr}-${randomStr}`;
-    // ===========================================================
 
     const finalAccessUrl = `${FORM_ACCESS_URL}?usp=pp_url&${FORM_ACCESS_ENTRY}=${accessId}`;
     document.getElementById('access-request-link').href = finalAccessUrl;
 
     document.getElementById('client-gate-modal').style.display = 'flex';
     document.body.style.overflow = 'hidden'; 
+    
+    // AÑADIR HISTORIAL
+    history.pushState({modal: 'client-gate'}, "", "#access");
+    
     setTimeout(() => input.focus(), 50);
 }
 
 function closeClientGate() {
-    document.getElementById('client-gate-modal').style.display = 'none';
-    document.body.style.overflow = ''; // DESBLOQUEAR SCROLL
+    if (history.state && history.state.modal === 'client-gate') {
+        history.back();
+    } else {
+        document.getElementById('client-gate-modal').style.display = 'none';
+        document.body.style.overflow = ''; 
+    }
 }
 
 async function checkClientAccess() {
@@ -994,18 +1033,24 @@ async function checkClientAccess() {
     
     try {
         const h = await hash(pass);
-        // IMPORTANTE: Primero comprobar contra la variable local (fallback)
         if (h === CLIENT_PASS_HASH) {
-             closeClientGate();
-             enableVipMode();
+             if (history.state && history.state.modal === 'client-gate') {
+                 history.back(); 
+             } else {
+                 closeClientGate();
+             }
+             setTimeout(() => enableVipMode(), 50);
              return;
         }
         
-        // Si no es la default, mirar si hay una custom en el input oculto
         const storedHash = document.getElementById('txt-client-hash').value;
         if(storedHash && storedHash.length > 10 && h === storedHash) {
-            closeClientGate();
-            enableVipMode();
+             if (history.state && history.state.modal === 'client-gate') {
+                 history.back();
+             } else {
+                 closeClientGate();
+             }
+             setTimeout(() => enableVipMode(), 50);
         } else {
             alert("Contraseña incorrecta");
         }
@@ -1016,7 +1061,6 @@ function enableVipMode() {
     isVip = true;
     document.body.classList.add('vip-mode');
     
-    // CAMBIO LOGO Y TEXTO A VERSIÓN VIP (VERDE -> LOGO VERDE)
     document.getElementById('header-logo').src = "img/zaunk-logo-2.png"; 
     document.getElementById('web-title').innerText = "DIY EFFECTS";
 
@@ -1026,6 +1070,10 @@ function enableVipMode() {
     intro.style.display = 'flex';
     intro.style.opacity = '1';
     
+    // NUEVO: AÑADIR ESTADO VIP AL HISTORIAL
+    // Usamos #trastienda para que se vea claro en la URL
+    history.pushState({mode: 'vip'}, "", "#trastienda");
+    
     setTimeout(() => {
         intro.style.opacity = '0';
         setTimeout(() => intro.style.display = 'none', 800);
@@ -1033,6 +1081,22 @@ function enableVipMode() {
         document.getElementById('access-banner').style.display = 'none'; 
         document.getElementById('public-catalog-title-container').style.display = 'none';
     }, 1500); 
+}
+
+// NUEVO: FUNCIÓN PARA SALIR DE MODO VIP (RESTAURAR AZUL)
+function disableVipMode() {
+    isVip = false;
+    document.body.classList.remove('vip-mode');
+    
+    // Restaurar Logo y Texto Azul
+    document.getElementById('header-logo').src = "img/Zaunk_Logo.png"; 
+    document.getElementById('web-title').innerText = document.getElementById('txt-title').value || "DIY PEDALS";
+
+    // Restaurar elementos públicos
+    document.getElementById('access-banner').style.display = 'block'; 
+    document.getElementById('public-catalog-title-container').style.display = 'block';
+    
+    renderFront(); // Re-pintar catálogo (oculta stock agotado visualmente etc)
 }
 
 async function loadData() {
@@ -1048,7 +1112,6 @@ async function loadData() {
       let vids = p.videoIDs || [];
       if(!vids.length && p.videoID) vids = [p.videoID];
       
-      // Mapeo de propiedad proximamente (si no existe, false)
       return { 
           ...p, 
           categoria: cats, 
@@ -1081,9 +1144,7 @@ function goHome(fromHistory = false) {
     
     if(!isVip) document.getElementById('public-catalog-title-container').style.display = 'block';
     
-    // Si no venimos del historial (botón atrás), limpiamos la URL para evitar bucles
     if (!fromHistory) {
-        // Si hay hash, lo quitamos
         if(window.location.hash) {
             history.pushState("", document.title, window.location.pathname + window.location.search);
         }
@@ -1121,28 +1182,20 @@ function renderFront() {
         const activeClass = inCartQty > 0 ? 'active' : '';
         const displayQty = inCartQty > 0 ? inCartQty : 1; 
         
-        // --- LOGICA BADGES ---
         let soldOutBadge = '';
-        
-        // 1. SOLD OUT: Solo se muestra si es VIP (en pública se ve normal)
         if(p.agotado && isVip) soldOutBadge = '<div class="sold-out-badge">SOLD OUT</div>';
-        
-        // 2. PRÓXIMAMENTE: Se muestra siempre
         if(p.proximamente) soldOutBadge = '<div class="coming-soon-badge">PRÓXIMAMENTE</div>';
         
-        // Eliminada clase 'agotado' visual para permitir color y click
         const agotadoClass = ''; 
-        
         const disabled = (p.agotado || p.proximamente) ? 'disabled' : '';
         const img = p.imagenes[0] || ''; 
 
-        // LOGICA CONDICIONAL
         let controlsHTML = '';
         let priceBadge = '';
         
         if (isVip) {
             if (p.proximamente) {
-                 priceBadge = ''; // No mostrar precio si es próximamente
+                 priceBadge = ''; 
                  controlsHTML = `
                   <div class="qty-control">
                     <button class="add-btn" disabled style="background:#ccc; border-color:#ccc; cursor:not-allowed;">PRÓXIMAMENTE</button>
@@ -1185,7 +1238,6 @@ function renderFront() {
 }
 
 function scrollToCat(cat) {
-    // SCROLL SUAVE CORREGIDO PARA EVITAR EL MENÚ STICKY
     document.getElementById('catalog-root').style.display = 'block';
     document.querySelectorAll('.info-page').forEach(p => p.style.display = 'none');
     
@@ -1193,7 +1245,7 @@ function scrollToCat(cat) {
 
     const el = document.getElementById(`cat-${cat}`);
     if(el) {
-        const headerOffset = 150; // Ajuste para que no lo tape el menú
+        const headerOffset = 150; 
         const elementPosition = el.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
        
@@ -1212,10 +1264,8 @@ function showInfoPage(page) {
     const targetSection = document.getElementById(`sec-${page}`);
     targetSection.style.display = 'block';
     
-    // GUARDAR HISTORIAL
     history.pushState({page: page}, "", "#" + page);
     
-    // SCROLL AL TITULO DE LA SECCION
     setTimeout(() => {
         const headerOffset = 100; 
         const elementPosition = targetSection.getBoundingClientRect().top;
@@ -1273,7 +1323,6 @@ window.onscroll = updateFab;
 
 // === GESTIÓN DEL MODAL CHECKOUT ===
 function openCheckout() {
-    // BLOQUEAR SCROLL DE FONDO
     document.body.style.overflow = 'hidden';
 
     const modal = document.getElementById('checkout-modal');
@@ -1281,14 +1330,12 @@ function openCheckout() {
     const shipOptionsDiv = document.getElementById('shipping-options');
     list.innerHTML = "";
     
-    // OBTENER PRECIOS CON SEGURIDAD (Si no existen, usa default)
     const elPen = document.getElementById('txt-shipping');
     const elEU = document.getElementById('txt-shipping-eu');
     
     const shipPen = elPen ? (parseInt(elPen.value) || 6) : 6;
     const shipEU = elEU ? (parseInt(elEU.value) || 0) : 0;
     
-    // CREAR RADIO BUTTONS (Orden: Recogida -> Península -> EU)
     let htmlShips = `<label><input type="radio" name="ship" value="0" data-name="Recogida en mano" onchange="updateCheckoutTotal()"> Recogida en mano [Gratis]</label>`;
     
     htmlShips += `<label><input type="radio" name="ship" value="${shipPen}" data-name="Península" checked onchange="updateCheckoutTotal()"> Península [${shipPen} €]</label>`;
@@ -1299,7 +1346,6 @@ function openCheckout() {
     
     shipOptionsDiv.innerHTML = htmlShips;
     
-    // Construir lista de items
     cart.forEach((qty, id) => {
         const p = db.find(x => x.id === id);
         if(p) {
@@ -1325,6 +1371,8 @@ function openCheckout() {
     
     updateCheckoutTotal();
     modal.style.display = 'flex';
+    
+    history.pushState({modal: 'checkout'}, "", "#checkout");
 }
 
 function updateCheckoutTotal() {
@@ -1334,18 +1382,20 @@ function updateCheckoutTotal() {
         if(p) subtotal += (parseInt(p.precio) * qty);
     });
     
-    // Buscar el radio seleccionado
     const selectedRadio = document.querySelector('input[name="ship"]:checked');
     const envio = selectedRadio ? parseInt(selectedRadio.value) : 0;
     
     document.getElementById('ck-subtotal').innerText = subtotal;
-    // document.getElementById('ck-shipping').innerText = envio; // Ya se ve en el radio
     document.getElementById('ck-total').innerText = subtotal + envio;
 }
 
 function closeCheckout() {
-    document.body.style.overflow = ''; // DESBLOQUEAR SCROLL
-    document.getElementById('checkout-modal').style.display = 'none';
+    if (history.state && history.state.modal === 'checkout') {
+        history.back();
+    } else {
+        document.body.style.overflow = ''; 
+        document.getElementById('checkout-modal').style.display = 'none';
+    }
 }
 
 function updateCheckoutQty(id, change) {
@@ -1368,7 +1418,35 @@ function updateCheckoutQty(id, change) {
     
     updateFab();
     if(cart.size === 0) closeCheckout();
-    else openCheckout(); 
+    else {
+        // Recargar contenido visualmente
+        const modal = document.getElementById('checkout-modal');
+        const list = document.getElementById('checkout-list');
+        list.innerHTML = "";
+        cart.forEach((qty, id) => {
+            const p = db.find(x => x.id === id);
+            if(p) {
+                const img = p.imagenes[0] || '';
+                const row = document.createElement('div');
+                row.className = 'checkout-item';
+                row.innerHTML = `
+                    ${img ? `<img src="${img}" class="checkout-img">` : ''}
+                    <div class="checkout-details">
+                        <h4>${p.nombre}</h4>
+                        <small>${p.precio} €/ud</small>
+                    </div>
+                    <div class="checkout-actions">
+                        <button class="checkout-btn" onclick="updateCheckoutQty('${id}', -1)">-</button>
+                        <span style="width:20px; text-align:center;">${qty}</span>
+                        <button class="checkout-btn" onclick="updateCheckoutQty('${id}', 1)">+</button>
+                        <button class="checkout-btn del-btn" onclick="updateCheckoutQty('${id}', -999)">X</button>
+                    </div>
+                `;
+                list.appendChild(row);
+            }
+        });
+        updateCheckoutTotal();
+    }
 }
 
 function confirmOrder() {
@@ -1405,25 +1483,26 @@ function confirmOrder() {
 }
 
 function openModal(id) {
-  // BLOQUEAR SCROLL DE FONDO
   document.body.style.overflow = 'hidden';
+  
+  const modalBox = document.querySelector('#modal .modal-box');
+  if(modalBox) {
+      setTimeout(() => { modalBox.scrollTop = 0; }, 10); 
+  }
 
   const p = db.find(x => x.id === id);
   if(!p) return;
   
-  // RESET CARRUSEL (Scroll al inicio)
   document.getElementById('carousel-track').scrollLeft = 0;
 
   document.getElementById('m-title').innerText = p.nombre;
   
-  // MODIFICACION: PRECIO Y BOTON SOLO SI ES VIP
   const priceLabel = document.getElementById('m-price');
   const btnSide = document.getElementById('m-btn-side');
   const btnMain = document.getElementById('m-btn');
   const btnInterest = document.getElementById('m-btn-interest-small');
 
   if(isVip) {
-      // SI ES PRÓXIMAMENTE, OCULTAMOS PRECIO Y DESACTIVAMOS BOTONES
       if(p.proximamente) {
           priceLabel.style.display = 'none';
           btnSide.innerText = "PRÓXIMAMENTE";
@@ -1449,9 +1528,8 @@ function openModal(id) {
           btnMain.disabled = false;
           btnMain.style.opacity = 1;
           
-          btnInterest.style.display = 'none'; // Ocultar boton pequeño
+          btnInterest.style.display = 'none';
           
-          // Asignar funcion de compra a ambos botones
           [btnSide, btnMain].forEach(b => {
               b.onclick = () => {
                     if(p.agotado) return;
@@ -1470,12 +1548,10 @@ function openModal(id) {
       }
 
   } else {
-      // SI NO ES VIP
       priceLabel.style.display = 'none';
       btnSide.style.display = 'none';
       btnInterest.style.display = 'inline-block'; 
       
-      // Botón principal se convierte en "¡ME INTERESA!"
       btnMain.innerText = "¡ME INTERESA!";
       btnMain.disabled = false;
       btnMain.style.opacity = 1;
@@ -1485,7 +1561,6 @@ function openModal(id) {
       };
   }
   
-  // Gestion AGOTADO (prioridad sobre próximamente para lógica visual de botones, aunque próximamente ya lo maneja arriba)
   if(p.agotado && isVip && !p.proximamente) {
       btnSide.innerText = "AGOTADO"; btnSide.disabled = true; btnSide.style.opacity = 0.5;
       btnMain.innerText = "AGOTADO"; btnMain.disabled = true; btnMain.style.opacity = 0.5;
@@ -1529,30 +1604,20 @@ function openModal(id) {
 
   document.getElementById('modal').style.display = 'flex';
   
-  // CORRECCIÓN SCROLL: Hacerlo justo DESPUÉS de mostrar el modal
-  const modalBox = document.querySelector('#modal .modal-box');
-  if(modalBox) {
-      setTimeout(() => { modalBox.scrollTop = 0; }, 10); // Un pequeño timeout asegura que el renderizado esté listo
-  }
-  
-  // GUARDAR ESTADO HISTORIAL PARA QUE EL BOTÓN "ATRÁS" FUNCIONE
-  history.pushState({modal: true}, "", "#" + id);
+  history.pushState({modal: 'product'}, "", "#" + id);
 
-  // RESET CARRUSEL (Scroll al inicio)
   setTimeout(() => {
       track.scrollLeft = 0;
   }, 10);
 }
 
 function closeModal() { 
-    document.body.style.overflow = ''; // DESBLOQUEAR SCROLL
-    document.getElementById('modal').style.display = 'none'; 
-    document.getElementById('carousel-track').innerHTML = ""; 
-    
-    // Si cerramos con el botón X, volvemos atrás para limpiar la URL
-    // (Solo si hay estado de historial, para no salir de la web)
-    if (history.state && history.state.modal) {
+    if (history.state && history.state.modal === 'product') {
         history.back();
+    } else {
+        document.body.style.overflow = ''; 
+        document.getElementById('modal').style.display = 'none'; 
+        document.getElementById('carousel-track').innerHTML = ""; 
     }
 }
 function scrollCarousel(dir) { const track = document.getElementById('carousel-track'); track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' }); }
@@ -1572,18 +1637,15 @@ function setupKeys() {
     keyBuffer += e.key.toLowerCase();
     if(keyBuffer.length > 20) keyBuffer = keyBuffer.slice(-20);
     
-    // Si se detecta la palabra secreta
     if(keyBuffer.endsWith(SECRET_WORD)) {
-        e.preventDefault(); // Evitar que la ultima letra se escriba si es input
+        e.preventDefault(); 
         forceLogin();
     }
   });
   
-  // Listener especifico para el input del login (ENTER KEY)
   document.getElementById('login-pass').addEventListener('keydown', (e) => {
       if(e.key === 'Enter') checkLogin();
   });
-  // Listener para el input de cliente
   document.getElementById('client-pass').addEventListener('keydown', (e) => {
       if(e.key === 'Enter') checkClientAccess();
   });
@@ -1591,20 +1653,25 @@ function setupKeys() {
 
 function forceLogin() {
     const input = document.getElementById('login-pass');
-    input.value = ''; // Limpiar primero
+    input.value = ''; 
     document.getElementById('login-modal').style.display = 'flex';
-    document.body.style.overflow = 'hidden'; // BLOQUEAR SCROLL
+    document.body.style.overflow = 'hidden'; 
     
-    // Retraso para evitar que la tecla 'i' se cuele en el focus
+    history.pushState({modal: 'login'}, "", "#login");
+    
     setTimeout(() => {
-        input.value = ''; // Asegurar limpieza total
+        input.value = ''; 
         input.focus();
     }, 50);
 }
 
 function closeLogin() {
-    document.getElementById('login-modal').style.display = 'none';
-    document.body.style.overflow = ''; // DESBLOQUEAR SCROLL
+    if (history.state && history.state.modal === 'login') {
+        history.back();
+    } else {
+        document.getElementById('login-modal').style.display = 'none';
+        document.body.style.overflow = ''; 
+    }
 }
 
 async function checkLogin() {
@@ -1614,15 +1681,31 @@ async function checkLogin() {
         const h = await hash(pass);
         const currentAdminHash = document.getElementById('txt-admin-hash').value || H_PASS;
         if(h === currentAdminHash) {
-            closeLogin();
-            document.getElementById('admin').style.display = 'block';
+            if (history.state && history.state.modal === 'login') {
+                history.back(); 
+            } else {
+                document.getElementById('login-modal').style.display = 'none';
+            }
+            
+            setTimeout(() => {
+                document.getElementById('admin').style.display = 'block';
+                history.pushState({modal: 'admin'}, "", "#admin");
+            }, 50);
+            
         } else {
             alert("Denegado");
         }
     } catch(e) { alert("Error"); }
 }
 
-function closeAdmin() { document.getElementById('admin').style.display = 'none'; renderFront(); }
+function closeAdmin() { 
+    if (history.state && history.state.modal === 'admin') {
+        history.back();
+    } else {
+        document.getElementById('admin').style.display = 'none'; 
+        renderFront(); 
+    }
+}
 
 async function genHash(type) {
   let inputId = type === 'admin' ? 'hash-input-admin' : 'hash-input-client';
@@ -1658,13 +1741,11 @@ function setupDragDrop() {
         e.target.style.background = '#fff';
         const files = e.dataTransfer.files;
         if (files.length > 0) {
-            // Intentar obtener el ID del pedal para crear la carpeta virtual
             let pedalID = document.getElementById('e-id').value;
             if(!pedalID) {
-                // Si no hay ID, generarlo desde el nombre
                 const name = document.getElementById('e-nombre').value;
                 if(name) pedalID = name.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
-                else pedalID = "general"; // Fallback
+                else pedalID = "general"; 
             }
             
             const path = `img/pedales/${pedalID}/${files[0].name}`;
