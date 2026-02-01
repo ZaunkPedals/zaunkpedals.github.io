@@ -625,10 +625,10 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
         <div class="carousel-track" id="carousel-track"></div>
         <button class="carousel-btn next" onclick="scrollCarousel(1)" style="display: block;">&gt;</button>
       </div>
-      <div id="carousel-dots" class="carousel-dots"><div class="dot active"></div><div class="dot "></div><div class="dot "></div><div class="dot"></div><div class="dot"></div></div>
+      <div id="carousel-dots" class="carousel-dots"><div class="dot active"></div><div class="dot"></div></div>
     </div>
     <div id="modal-info">
-      <h2 id="m-title" style="font-size:2rem; margin-bottom:0.5rem;">The Red Artifact</h2>
+      <h2 id="m-title" style="font-size:2rem; margin-bottom:0.5rem;">Desert Storm</h2>
        
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:1rem; flex-wrap:wrap;">
           <div id="m-cats"><span style="background:var(--main-color); color:#fff; padding:2px 6px; margin-right:5px; font-size:0.8rem;">FUZZ</span></div>
@@ -643,24 +643,17 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
         <button id="m-btn-side" class="btn" style="padding: 5px 15px; font-size: 0.9rem; margin-left: 15px; display: none; opacity: 1;">LO QUIERO (+1)</button>
       </div>
        
-      <div id="m-desc">El <b>Red Artifact</b> (Fuzz War) es un pedal de fuzz salvaje y abrasivo, capaz de ir de una saturación cálida a una distorsión caótica. Perfecto para quienes buscan un muro de sonido imparable.<br>
-<h3>CARACTERÍSTICAS:</h3>
+      <div id="m-desc"><p>El rugido de un amplificador Sunn Model T a todo volumen en una caja pequeña. Un fuzz de potencia pura, dinámico y sensible a tu forma de tocar. Sin tonterías.</p>
 
-<p><strong>Sección de Control Fuzz:</strong></p>
-
+<p><strong>CONTROLES:</strong></p>
 <ul>
-  <li><strong>Fuzz:</strong> Controla la intensidad del fuzz, desde una ligera saturación hasta distorsión total.</li>
-  <li><strong>Tone:</strong> Ajusta el rango de frecuencias, proporcionando una barrida amplia desde un fuzz grave y oscuro hasta agudos penetrantes.</li>
-  <li><strong>Volume:</strong> Controla el nivel de salida general, permitiendo que el fuzz sea tan fuerte o sutil como lo desees.</li>
+  <li><strong>Volume:</strong> Un solo botón. Gíralo y destruye.</li>
 </ul>
 
-<p>
-  Funciona con una <strong>fuente de alimentación estándar para pedales</strong>: 
-  <strong>9 Voltios DC, centro negativo</strong> (no incluida).
-</p>
+<p><strong>FILOSOFÍA:</strong></p>
+<p>Baja el volumen de tu guitarra para limpiar la señal, súbelo para desatar la tormenta. Stoner y Doom instantáneo.</p>
 
-
-</div>
+<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p></div>
       <br>
       <button id="m-btn" class="btn" style="width: 100%; opacity: 1;">¡ME INTERESA!</button>
     </div>
@@ -698,7 +691,7 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
 
       <div style="display:flex; flex-direction:column; gap:10px; margin-top:1rem;">
           <button class="btn" onclick="checkClientAccess()">ENTRAR</button>
-          <a id="access-request-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfcO8TVkngcV9X1HHVkd3Lwd4V_w1ZSZJrlepYngiMaFaq2zw/viewform?usp=pp_url&amp;entry.436883588=REQ-938868" target="_blank" class="btn" style="background:#eee; color:#000; border-color:#999; text-align:center; text-decoration:none;">PIDE TU ACCESO</a>
+          <a id="access-request-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfcO8TVkngcV9X1HHVkd3Lwd4V_w1ZSZJrlepYngiMaFaq2zw/viewform?usp=pp_url&amp;entry.436883588=PET-260201-610" target="_blank" class="btn" style="background:#eee; color:#000; border-color:#999; text-align:center; text-decoration:none;">PIDE TU ACCESO</a>
           <button class="btn" onclick="closeClientGate()" style="border-color:red; color:red; margin-top:5px;">CANCELAR</button>
       </div>
    </div>
@@ -878,7 +871,7 @@ Debido a la falta de tiempo, se aceptan muy pocos encargos personalizados, aunqu
                 <input id="hash-input-client" placeholder="Nueva clave clientes..." style="margin:0;">
                 <button class="btn" onclick="genHash('client')">GENERAR</button>
               </div>
-              <div id="hash-output-client" class="hash-box" style="display: block; margin-top: 10px; font-size: 0.7rem; word-break: break-all;">
+              <div id="hash-output-client" class="hash-box" style="display: none; margin-top: 10px; font-size: 0.7rem; word-break: break-all;">
                  Hash: <span id="hash-str-client" style="color:#fff;">1afa95a6c07dae57c9dfeb7066681c2d99b7a80f0a742a15140ac33efbce7390</span>
               </div>
           </div>
@@ -1535,6 +1528,12 @@ function openModal(id) {
   btns.forEach(b => b.style.display = totalItems > 1 ? 'block' : 'none');
 
   document.getElementById('modal').style.display = 'flex';
+  
+  // CORRECCIÓN SCROLL: Hacerlo justo DESPUÉS de mostrar el modal
+  const modalBox = document.querySelector('#modal .modal-box');
+  if(modalBox) {
+      setTimeout(() => { modalBox.scrollTop = 0; }, 10); // Un pequeño timeout asegura que el renderizado esté listo
+  }
   
   // GUARDAR ESTADO HISTORIAL PARA QUE EL BOTÓN "ATRÁS" FUNCIONE
   history.pushState({modal: true}, "", "#" + id);
