@@ -28,7 +28,7 @@
       "dub"
     ],
     "precio": "145",
-    "agotado": false,
+    "agotado": true,
     "proximamente": false,
     "imagenes": [
       "img/pedales/dub-siren/Zaunk_Add_Siren_Cover.png",
@@ -48,7 +48,8 @@
       "Fuzz"
     ],
     "precio": "80",
-    "agotado": false,
+    "agotado": true,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/red-artifact/The_Red_Artifact_Cover.png",
       "img/pedales/red-artifact/The_Red_Artifact_Back_ES.png",
@@ -59,8 +60,7 @@
       "F7mpZUPxKhQ"
     ],
     "descripcionCorta": "Un muro de sonido imparable (Basado en Fuzz War).",
-    "descripcionLarga": "<p>Un fuzz salvaje y abrasivo capaz de todo: desde un overdrive sucio hasta la destrucción total. Graves masivos y agudos que cortan la mezcla. Perfecto para Noise, Garage y Stoner.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Fuzz:</strong> De saturación ligera a caos total.</li>\n  <li><strong>Tone:</strong> Barrido de frecuencias extremo (de muy grave a muy agudo).</li>\n  <li><strong>Volume:</strong> Salida brutal para empujar tu amplificador.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>",
-    "proximamente": false
+    "descripcionLarga": "<p>Un fuzz salvaje y abrasivo capaz de todo: desde un overdrive sucio hasta la destrucción total. Graves masivos y agudos que cortan la mezcla. Perfecto para Noise, Garage y Stoner.</p>\n\n<p><strong>CONTROLES:</strong></p>\n<ul>\n  <li><strong>Fuzz:</strong> De saturación ligera a caos total.</li>\n  <li><strong>Tone:</strong> Barrido de frecuencias extremo (de muy grave a muy agudo).</li>\n  <li><strong>Volume:</strong> Salida brutal para empujar tu amplificador.</li>\n</ul>\n\n<p><small>Alimentación: 9V DC estándar (centro negativo).</small></p>"
   },
   {
     "id": "bazz-fuss",
@@ -111,8 +111,8 @@
       "Tremolo"
     ],
     "precio": "70",
-    "agotado": false,
-    "proximamente": true,
+    "agotado": true,
+    "proximamente": false,
     "imagenes": [
       "img/pedales/spaghetti-surfer/Tremolo_Cover.png",
       "img/pedales/spaghetti-surfer/Tremolo_Back_ES.png",
